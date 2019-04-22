@@ -10,9 +10,10 @@ location /logo {
 }
 ````
 
+
 ### Rewrites
 Doesn’t change URL in browser address bar
-
+* PUBLIC IP/ab_test/123 --> rewrites to PUBLIC IP/test internally
 ````
 events{}
 http{
@@ -30,7 +31,6 @@ http{
 }
 
 ````
-* PUBLIC IP/ab_test/123 --> rewrites to PUBLIC IP/test internally
 
 #### rewrite parameters
 
